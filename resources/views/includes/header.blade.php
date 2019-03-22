@@ -10,7 +10,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{asset('contact')}}">Контакты</a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="{{asset('give')}}">Информация</a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="{{asset('showme')}}">Галерея</a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="{{asset('populars')}}">Популярное</a>
+                            </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
