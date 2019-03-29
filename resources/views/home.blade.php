@@ -36,8 +36,8 @@
 	@endif
   </div>
   <div class="form-group">
-  <label for="catalog">категория</label> 
-  <input type="text" class="form-control" id="catalog" name="catalog" placeholder="">
+  <label for="catalog_id">категория</label> 
+  <input type="text" class="form-control" id="catalog_id" name="catalog_id" placeholder="">
   </div>
   <div class="form-group">
   <label for="price">цена</label> 
