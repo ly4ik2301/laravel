@@ -17,7 +17,7 @@
                                 <a class="nav-link" href="{{asset('give')}}">Информация</a>
                             </li>
 							<li class="nav-item">
-                                <a class="nav-link" href="{{asset('showme')}}">Галерея</a>
+                                <a class="nav-link" href="{{asset('products')}}">Галерея</a>
                             </li>
 							<li class="nav-item">
                                 <a class="nav-link" href="{{asset('populars')}}">Популярное</a>

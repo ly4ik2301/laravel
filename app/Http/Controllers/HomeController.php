@@ -20,25 +20,32 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+    public function getDelete($id = null)
+    {
+        $one = Product::find($id);
+        if (Auth::user()->id == $one->user_id) {
+            $one->delete();
+        }
+        return redirect()->back();
+    }
+
     public function index()
     {
-		$products=Product::where('user_id',Auth::user()->id)->paginate(10);
-        return view('home',compact('products'));
+        $products = Product::where('user_id', Auth::user()->id)->paginate(10);
+        return view('home', compact('products'));
     }
-	public function postIndex (ProductRequest $r){
-	    if($_FILES['picture1']){
-		$pic=\App::make('\App\Libs\Imag')->url($_FILES['picture1']['tmp_name']);
-		}else{
-		$pic='';
-		}
-		$r['picture']=$pic;
-	$r['user_id']=Auth::user()->id;
-	Product :: create($r->all());
-	return redirect()->back();
-	}
+
+    public function postIndex(ProductRequest $r)
+    {
+        if ($_FILES['picture1']) {
+            $pic = \App::make('\App\Libs\Imag')->url($_FILES['picture1']['tmp_name']);
+        } else {
+            $pic = '';
+        }
+
+        $r['picture'] = $pic;
+        $r['user_id'] = Auth::user()->id;
+        Product:: create($r->all());
+        return redirect()->back();
+    }
 }
