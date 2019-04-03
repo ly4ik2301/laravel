@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3345315-7762-498a-9185-c59e54c2ea9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/model.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/products.blade.php" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel (1).sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel (2).sql" afterPath="$PROJECT_DIR$/laravel (2).sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -375,12 +371,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554136130027</updated>
       <workItem from="1554136132929" duration="8242000" />
-      <workItem from="1554307495430" duration="6742000" />
+      <workItem from="1554307495430" duration="7048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14984000" />
+    <option name="totallyTimeSpent" value="15290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
