@@ -1,4 +1,13 @@
 @extends('layouts.app')
+@section('styles')
+    @parent
+    <link href="{{asset('css/model.css')}}" rel="stylesheet"/>
+@endsection
+@section('scripts')
+    @parent
+    <script src="{{asset('js/model.js')}}">
+    </script>
+@endsection
 
 @section('content')
     <div class="container">
@@ -15,11 +24,13 @@
                                 @foreach($products as $one)
                                     <div class="col-sm">
                                         <div>
-                                            @if($one->picture != null)
-                                                <img src="{{asset('public/uploads/s_'.$one->picture)}}"/>
-                                            @else
-                                                <img src="{{asset('public/uploads/no_photo.png')}}" width="200px"/>
-                                        @endif
+                                            <a href="#" class="clickme" data_id="{{$one->id}}">
+                                                @if($one->picture != null)
+                                                    <img src="{{asset('public/uploads/s_'.$one->picture)}}"/>
+                                                @else
+                                                    <img src="{{asset('public/uploads/no_photo.png')}}" width="200px"/>
+                                                @endif
+                                            </a>
                                         </div>
                                         <div>
                                             <a href="{{asset('product/'.$one->id)}}">{{$one->name}}
