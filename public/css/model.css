@@ -21,3 +21,19 @@
     background: black;
     z-index:98;
 }
+.modal-close-btn{
+    position:absolute;
+    top:1px;
+    right:1px;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
+.modal-close-btn:before{
+    content:'закрыть';
+    top:-1px;
+    position: relative;
+    font-size: 12px;
+}

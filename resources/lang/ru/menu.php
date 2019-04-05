@@ -2,7 +2,7 @@
 
 return [
 
-    'main'=>'Main',
-     'photo'=>'Photo',
-    'contact'=>'contact'
+    'main' => 'Главная',
+    'photo' => 'Фото',
+    'contact' => 'Контакты'
 ];

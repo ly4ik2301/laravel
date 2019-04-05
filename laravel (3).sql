@@ -2,8 +2,8 @@
 -- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3307
--- Время создания: Мар 29 2019 г., 21:51
+-- Хост: 127.0.0.1:3306
+-- Время создания: Апр 05 2019 г., 21:34
 -- Версия сервера: 5.7.20
 -- Версия PHP: 7.2.0
 
@@ -45,7 +45,8 @@ CREATE TABLE `maintexts` (
 INSERT INTO `maintexts` (`id`, `name`, `body`, `url`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'Контакты', '<h2>Телефоны<h2>', 'contact', 'show', NULL, NULL),
 (2, 'Информация', '<h2>информация<h2>', 'give', 'show', NULL, NULL),
-(3, 'Галерея', '<h2>каталог<h2>', 'showme', 'show', NULL, NULL);
+(3, 'Галерея', '<h2>каталог<h2>', 'showme', 'show', NULL, NULL),
+(4, 'категории', '', 'category', 'show', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -105,11 +106,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `body`, `catalog_id`, `price`, `picture`, `user_id`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'афцуа', 'фуцафца', 'афуцца', 'ауфц', NULL, 1, 'афцуфца', '2019-03-27 15:16:07', '2019-03-27 15:16:07'),
-(2, 'etet', 'etete', NULL, 'eteeret', NULL, 1, 'etrter', '2019-03-29 11:39:02', '2019-03-29 11:39:02'),
-(3, 'rth', 'hrthrt', NULL, 'hthrh', NULL, 1, 'rthrh', '2019-03-29 13:26:25', '2019-03-29 13:26:25'),
 (4, 'dawd', 'adw', NULL, 'awdaw', '19_03_29_05_38_07.jpg', 1, 'daw', '2019-03-29 14:38:07', '2019-03-29 14:38:07'),
-(5, 'пингвины', 'ничего такие', NULL, '1р', '19_03_29_06_02_35.jpg', 1, 'в зоопарке', '2019-03-29 15:02:35', '2019-03-29 15:02:35');
+(5, 'пингвины', 'ничего такие', NULL, '1р', '19_03_29_06_02_35.jpg', 1, 'в зоопарке', '2019-03-29 15:02:35', '2019-03-29 15:02:35'),
+(6, 'add', 'ads', NULL, 'ads', '', 1, 'adsd', '2019-04-01 14:36:10', '2019-04-01 14:36:10');
 
 -- --------------------------------------------------------
 
@@ -178,7 +177,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `maintexts`
 --
 ALTER TABLE `maintexts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `migrations`
@@ -190,7 +189,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `users`

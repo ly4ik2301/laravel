@@ -12,13 +12,13 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('contact')}}">Контакты</a>
+                    <a class="nav-link" href="{{asset('contact')}}">{{__('menu.contact')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('give')}}">Информация</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('products')}}">Галерея</a>
+                    <a class="nav-link" href="{{asset('products')}}">{{__('menu.photo')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('populars')}}">Популярное</a>
