@@ -13,6 +13,10 @@ class Product extends Model
 	'price',
 	'picture',
 	'user_id',
-	'status'];
-	
+	'status'
+    ];
+
+	public function catalogs(){
+	    return $this->belongsTo('App\Catalog','catalog_id');
+    }
 }

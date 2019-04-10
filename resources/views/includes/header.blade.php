@@ -26,10 +26,27 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('category')}}">Категории</a>
                 </li>
+
+
             </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <span>{{\App::getLocale()}}</span>
+                </li>
+                <li class="nav-item">
+
+                    <a href="{{asset('/?lang=ru')}}">
+                        русский
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a href="{{asset('/?lang=en')}}">
+                        English
+                    </a>
+                </li>
                 <!-- Authentication Links -->
                 @guest
                 <li class="nav-item">
