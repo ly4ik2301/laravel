@@ -15,16 +15,16 @@
                     <a class="nav-link" href="{{asset('contact')}}">{{__('menu.contact')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('give')}}">Информация</a>
+                    <a class="nav-link" href="{{asset('give')}}">{{__('menu.information')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('products')}}">{{__('menu.photo')}}</a>
+                    <a class="nav-link" href="{{asset('products')}}">{{__('menu.products')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('populars')}}">Популярное</a>
+                    <a class="nav-link" href="{{asset('populars')}}">{{__('menu.popular')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('category')}}">Категории</a>
+                    <a class="nav-link" href="{{asset('category')}}">{{__('menu.category')}}</a>
                 </li>
 
 

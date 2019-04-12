@@ -3,6 +3,10 @@
 return [
 
     'main' => 'Главная',
-    'photo' => 'Фото',
-    'contact' => 'Контакты'
+    'products' => 'Продукты',
+    'contact' => 'Контакты',
+    'information' =>'Информация',
+    'popular'=>'популярное',
+    'category'=>'категории'
+
 ];

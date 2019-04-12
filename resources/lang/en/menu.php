@@ -3,6 +3,10 @@
 return [
 
     'main' => 'Main',
-    'photo' => 'Photo',
-    'contact' => 'contact'
+    'products' => 'products',
+    'contact' => 'contact',
+    'information' =>'information',
+    'popular'=>'popular',
+    'category'=>'category'
+
 ];
