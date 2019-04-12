@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 10 2019 г., 21:50
+-- Время создания: Апр 12 2019 г., 21:23
 -- Версия сервера: 5.7.20
 -- Версия PHP: 7.2.0
 
@@ -66,10 +66,8 @@ CREATE TABLE `maintexts` (
 --
 
 INSERT INTO `maintexts` (`id`, `name`, `body`, `url`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Контакты', '<h2>Телефоны<h2>', 'contact', 'show', NULL, NULL),
-(2, 'Информация', '<h2>информация<h2>', 'give', 'show', NULL, NULL),
-(3, 'Галерея', '<h2>каталог<h2>', 'showme', 'show', NULL, NULL),
-(4, 'категории', '', 'category', 'show', NULL, NULL);
+(1, 'Контакты', '', 'contact', 'show', NULL, NULL),
+(2, 'Информация', '', 'give', 'show', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -156,7 +154,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'roman', 'ly4ik2301@gmail.com', NULL, '$2y$10$YDzcmQ38ibtbgbWi6la6Fu1zezyLBtox3Vzs9qQkWdEb8f9Nt9DkW', NULL, '2019-03-27 13:17:16', '2019-03-27 13:17:16');
+(1, 'roman', 'ly4ik2301@gmail.com', NULL, '$2y$10$YDzcmQ38ibtbgbWi6la6Fu1zezyLBtox3Vzs9qQkWdEb8f9Nt9DkW', 'hwkAzyIVf47SY5Q9OVkrtXVtzh6eedaIVcehDj6MsBHy5Jx8pIS2NLqhJrCa', '2019-03-27 13:17:16', '2019-03-27 13:17:16'),
+(2, 'grisha', 'grisha@gmail.com', NULL, '$2y$10$pB.MkgDLBeyWznCKCpSfh.BUH2yJ9LATHK6pl5yD/53fgHlcbuY6i', NULL, '2019-04-12 17:49:24', '2019-04-12 17:49:24'),
+(3, 'dwada', 'adwdad@gmail.com', NULL, '$2y$10$/iXrVNrqPxMVVzCnCR2vWuO/jGEglTeTlCUU79MdfXosjri8F8NSe', NULL, '2019-04-12 17:56:14', '2019-04-12 17:56:14');
 
 --
 -- Индексы сохранённых таблиц
@@ -231,7 +231,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

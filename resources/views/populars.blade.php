@@ -11,7 +11,7 @@
 @foreach($all as $one)
 <h2>
 <a href="{{$one->url}}"->{{$one->name}}</a>
-{{$one->name}}<h2>
+<h2>
 <div>
 {!!$one->body!!}</div>
 @endforeach

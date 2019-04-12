@@ -23,10 +23,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('populars')}}">{{__('menu.popular')}}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('category')}}">{{__('menu.category')}}</a>
-                </li>
 
+                <li class="nav-item dropdown"><a id="navbarDropdown" class="nav-link dropdown-toggle"
+                                                 href="{{asset('category')}}" role="button" data-toggle="dropdown"
+                                                 aria-haspopup="true" aria-expanded="false">
+                        {{__('menu.category')}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        @foreach($catalogs as $one)
+                            <li><a href="{{asset('/catalog/'.$one->id)}}">{{$one->name}}</a></li>
+                        @endforeach
+                    </ul>
+                </li>
 
             </ul>
 
@@ -72,7 +79,7 @@
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-
+{!! csrf_field() !!}
                             </form>
                         </div>
                     </li>
