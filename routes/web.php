@@ -1,5 +1,7 @@
 <?php
-
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
 Route::group(['middleware'=>['lang']],function (){
     Route::get('/','BaseController@getIndex');
 });
@@ -26,3 +28,8 @@ Route::get('{url}', 'StaticController@getIndex');
 
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
