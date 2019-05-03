@@ -7,9 +7,10 @@ Route::group(['middleware'=>['lang']],function (){
 });
 
 Auth::routes();
-
+Route::get('user/{id}','ChatController@getUser');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('works','WorkController@getAll');
+Route::get('user/{id}','ChatController@getUser');
 Route::post('home', 'HomeController@postIndex');
 Route::get('home/dell/{id}','HomeController@getDelete');
 Route::get('populars', 'StaticController@getPopulars');
