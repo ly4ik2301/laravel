@@ -8,6 +8,7 @@ Route::group(['middleware'=>['lang']],function (){
 
 Auth::routes();
 Route::get('user/{id}','ChatController@getUser');
+Route::get('users','UserController@getAll');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('works','WorkController@getAll');
 Route::get('user/{id}','ChatController@getUser');

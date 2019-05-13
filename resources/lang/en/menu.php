@@ -3,10 +3,10 @@
 return [
 
     'main' => 'Main',
-    'products' => 'products',
-    'contact' => 'contact',
-    'information' =>'information',
-    'popular'=>'popular',
-    'category'=>'category'
-
+    'products' => 'Products',
+    'contact' => 'Contact',
+    'information' => 'Information',
+    'popular' => 'Popular',
+    'category' => 'Category',
+    'users' => 'Users'
 ];

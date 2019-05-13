@@ -90,4 +90,8 @@ class UserController extends Controller
         $obj=user::find($id);
         return $obj->email;
     }
+    public function getAll(){
+        $users=User::where('id','>',0)->paginate(20);
+        return view('users',compact('users'));
+    }
 }

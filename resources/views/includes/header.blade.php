@@ -23,7 +23,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('populars')}}">{{__('menu.popular')}}</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('users')}}">{{__('menu.users')}}</a>
+                </li>
                 <li class="nav-item dropdown"><a id="navbarDropdown" class="nav-link dropdown-toggle"
                                                  href="{{asset('category')}}" role="button" data-toggle="dropdown"
                                                  aria-haspopup="true" aria-expanded="false">

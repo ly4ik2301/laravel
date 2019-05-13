@@ -5,12 +5,17 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">чат</div>
+                    <div class="card-header">пользователи</div>
 
                     <div class="card-body">
 
-                        <iframe width="100%" height="800px"
-                                src="http://localhost:9090/chat.html?Name={{Auth::user()->name}}&Room={{$obj->name}}"></iframe>
+                        @foreach($users as $user )
+                            <div class="user">
+                                <a href="{{asset('user/'.$user->id)}}">{{$user->name}}</a>
+
+                            </div>
+                            @endforeach
+
 
                     </div>
                 </div>
